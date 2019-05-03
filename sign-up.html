@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="resources/css/index.css">
+    <title>Budget Tracker App</title>
+    
+
+    <!-- Auto Numeric -->
+    <script src="vendors/jquery/autoNumeric/autoNumeric.js" type=text/javascript> </script>
+    
+  </head>
+  <body class="body-create">
+    <div class="text">
+        <h1>First, we need your details.</h1>
+        <form method="post" id="sign-up">
+            First Name<input id="firstName" type="text" required/><br>
+            Last Name <input id="lastName" type="text" required/><br>
+            Occupation <input id="ocptn" type="text" required/><br>
+            
+            <ul>
+                Monthly Budget<input class="money-bg" id="budget" type="text" data-a-sign="$ " required/><br>
+                Monthly Income<input class="money-bg" id="income" type="text" data-a-sign="$ " required/><br>
+                Account Balance<input class="money-bg" id="balance" type="text" data-a-sign="$ " required/><br>
+            </ul>
+            <button type="button" id="next">Next</button>
+        </form>
+        
+
+    </div>
+    
+    <script>
+    
+        
+    
+    /*function User ( name, occupation, budget, income, expenses ) {
+        this.name = name
+        this.occupation = occupation;
+        this.budget = budget;
+        this.income = income;
+        this.balance = balance;
+    }
+    
+        var user_input = new User(name, occupation, budget, income, expenses);
+        
+        var inputs_arr = [];
+        inputs_arr.push(user_input);
+        localStorage.setItem("dataList", JSON.stringify(inputs_arr));
+        //creates an array
+        var tempList = JSON.parse(localStorage.getItem("dataList"));
+        console.log(tempList)
+        var formData = {
+			set : function (){
+				// (Re)create the myForm valiable
+				var myForm = [];
+				// Delete old data from localstorage
+				localStorage.removeItem('myForm');
+				// Take each input's name and value and add it to the array we already created.
+				$('form input[type=text]').each(function(){
+					// Push each input's value into the temporary variable
+					myForm.push({ 
+                        name: this.name, value: this.value
+                    });
+				});
+				// Add the array to localStorage
+				localStorage.myForm = JSON.stringify(myForm);
+			},
+            
+			get : function (){
+				// Is the form already stored within localStorage? If so, get it and copy it's contents over our myform array variable.
+				if(localStorage.myForm != undefined){
+					// Get the existing values out of localStorage
+					myForm = JSON.parse(localStorage.myForm);
+					// Loop through myForm
+					for (var i = 0; i < myForm.length; i++) {
+						// Populate the form with what data you have for it
+						$('[name='+myForm[i].name+']').val(myForm[i].value);
+					}
+				}
+			}
+		}
+        // Populate the form with whatever data already exists for it
+		formData.get();
+        console.log(formData);
+		// Watch for a change in a change in an input field. If there is a change, resave the form values.
+		$("input").change( function() {
+			// If a change is detected, save the values.
+			formData.set();
+
+		});*/
+        
+        
+    </script>
+    <script src="resources/js/jquery-latest.min.js"></script>
+    <script src="resources/js/source-codes.js"></script>
+    
+    <script src="vendors/jquery/autoNumeric/autoNumeric.js" type=text/javascript> </script>
+    
+    <!-- jQuery UI: Validation -->
+    <script src="vendors/jquery/jquery-validation-1.17.0/dist/jquery.validate.js"></script>
+    
+     <script src="resources/js/popper.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+  </body>
+</html>
