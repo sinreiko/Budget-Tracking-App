@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="resources/css/index.css">
+    <title>Budget Tracker App</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+    
+    <!--Font icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--Data tables-->
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+    
+
+  </head>
+  <body class="body-home">
+    <section class="section-expenses">
+        <nav>
+            <a href="home.html">
+            <i class="fa fa-arrow-left" aria-hidden="true" style="font-size:1.9em;padding-left:5px;"></i>
+            </a>
+        </nav>
+        <input id="date" type="month" value="2017-12"/><br>
+        <ul>
+            <img src="resources/img/finances.svg" width="5%" class="tabs" id="charts"/>
+            <img src="resources/img/line-chart.svg" width="5%" class="tabs" id="line"/>
+            <img src="resources/img/bar-chart.svg" width="5%" class="tabs" id="table"/>
+        </ul>
+    </section>
+    
+    <div class="chartContainer" id="piechartContainer" style="height:500px;width:800px;"></div>
+    <div class="chartContainer" id="linechartContainer" style="height:500px;width:800px;"></div>
+    
+    <script>
+      </script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="resources/js/source-codes.js"></script>
+        <script src="resources/js/analysis.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
