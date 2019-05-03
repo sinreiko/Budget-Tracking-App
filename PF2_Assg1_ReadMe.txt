@@ -1,0 +1,3 @@
+README First page – index.html       - Click anywhere to beginSecond page – sign-up.html      - get User’s details      - all fields are required to click “next”Third page – home.html      - click to open up expenses(.html) page or analysis(.html) page      *bug: table.html page is not workingFourth page – expenses or analysis pageExpenses page: - Record user’s spending - all fields are required- click on shopping cart (+) to add expenses- total expenses will appear at the header
+*bug: remove button doesn't workAnalysis page: - Analyse user’s expenses and turn into charts/line/bar graph- click on icons to open each graphs. 
+*bug graphs are not functioning
